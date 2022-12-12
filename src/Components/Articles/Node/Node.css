@@ -1,0 +1,54 @@
+#node {
+  text-align: left;
+}
+#node li {
+  margin-bottom: 1rem;
+}
+#node img {
+  max-width: 100%;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+#node section {
+  margin-bottom: 50px;
+}
+#node a {
+  margin-inline: 4px;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+#node pre {
+  background-color: var(--color-secondary);
+  padding: 10px;
+  border-radius: 3px;
+  color: var(--background-color);
+}
+#node h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  #node {
+    max-width: 50%;
+    margin: auto;
+  }
+  #node .max-w-30 {
+    max-width: 30%;
+  }
+  #node img.float-right {
+    margin-left: 30px;
+    margin-bottom: 0;
+  }
+  #node img.float-left {
+    margin-right: 30px;
+    margin-bottom: 0;
+  }
+  .float-right {
+    float: right;
+  }
+  .float-left {
+    float: left;
+  }
+}

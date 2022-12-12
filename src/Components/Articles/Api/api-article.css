@@ -1,0 +1,50 @@
+.article-body {
+  margin: 142px;
+  padding: 42px;
+  height: auto;
+  width: auto;
+}
+
+.article-body img {
+  width: auto;
+  background-color: rgb(203, 212, 217);
+  padding: 15px;
+  height: 400px;
+  margin: 42px;
+}
+
+.video-player {
+  height: 100%;
+  width: 100%;
+  padding: 32px;
+}
+
+.text-video-player {
+  height: auto;
+  width: auto;
+  margin: 10px;
+}
+
+@media screen and (max-width: 600px) {
+  .article-body {
+    font-size: 30px;
+    height: 100px;
+    padding: 0%;
+    width: auto;
+    margin: 5px;
+  }
+  img {
+    height: 300px;
+    width: auto;
+  }
+  .video-player {
+    height: 500px;
+    width: auto;
+    margin: 20px;
+  }
+  .list-apis {
+    width: auto;
+    height: auto;
+    margin-top: 150px;
+  }
+}

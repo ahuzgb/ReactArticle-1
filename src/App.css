@@ -5,6 +5,7 @@
   --text-color: rgb(146, 159, 165);
   --font-family: "Open Sans", sans-serif, "Roboto", sans-serif;
 }
+
 html body {
   background-color: var(--background-color);
   font-family: var(--font-family);
@@ -12,7 +13,8 @@ html body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   color: var(--color-secondary);
 }
 
