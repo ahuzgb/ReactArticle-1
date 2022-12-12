@@ -39,9 +39,9 @@ export default function Header({ children }) {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    Server Architecture
-                  </a>
+                  <NavLink to="/server" className="nav-link">
+                    Server Architectures
+                  </NavLink>
                 </li>
                 <li className="nav-item">
                   <NavLink to="/api" className="nav-link">

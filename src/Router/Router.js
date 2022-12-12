@@ -8,6 +8,7 @@ import App from "../App";
 import ApiArticle from "../Components/Articles/Api/Api-article";
 import JSONart from "../Components/Articles/Json/JSON";
 import Node from "../Components/Articles/Node";
+import ServerArchitecture from "../Components/Articles/ServerArchitecture/ServerArchitecture";
 import Header from "../Components/Header";
 
 export const router = createBrowserRouter(
@@ -17,6 +18,7 @@ export const router = createBrowserRouter(
       <Route path="/node" element={<Node />} />
       <Route path="/json" element={<JSONart />} />
       <Route path="/api" element={<ApiArticle />} />
+      <Route path="/server" element={<ServerArchitecture />} />
     </Route>
   )
 );
