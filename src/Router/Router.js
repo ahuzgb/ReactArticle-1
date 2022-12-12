@@ -5,6 +5,7 @@ import {
   Route,
 } from "react-router-dom";
 import App from "../App";
+import JSONart from "../Components/Articles/Json/JSON";
 import Node from "../Components/Articles/Node";
 import Header from "../Components/Header";
 
@@ -13,6 +14,7 @@ export const router = createBrowserRouter(
     <Route path="/" element={<Header />}>
       <Route index element={<App />} />
       <Route path="/node" element={<Node />} />
+      <Route path="/json" element={<JSONart />} />
     </Route>
   )
 );

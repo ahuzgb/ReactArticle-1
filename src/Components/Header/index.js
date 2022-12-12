@@ -34,9 +34,9 @@ export default function Header({ children }) {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <NavLink to="/json" className="nav-link">
                     JSON
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
@@ -44,9 +44,9 @@ export default function Header({ children }) {
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <NavLink to="/api" className="nav-link">
                     What is API?
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>
