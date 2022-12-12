@@ -1,10 +1,9 @@
 import "./App.css";
 
-
 function App() {
   return (
     <div className="App">
-      <h1>Backend Articles</h1>
+      <h1>Magic in the Backend</h1>
     </div>
   );
 }
