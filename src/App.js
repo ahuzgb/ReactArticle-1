@@ -1,5 +1,6 @@
 import "./App.css";
 import Header from "./Components/Header";
+import Node from "./Components/Articles/Node";
 import JSONart from "./Components/Header/JSON";
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <button type="button" className="btn btn-primary">
         Send
       </button>
+      <Node />
     </div>
   );
 }
