@@ -1,7 +1,8 @@
 import "./App.css";
 import Header from "./Components/Header";
 import Node from "./Components/Articles/Node";
-import ServerArchitecture from "./Components/Articles/ServerArchitecture";
+import JSONart from "./Components/Articles/JSON";
+
 function App() {
   return (
     <div className="App">
