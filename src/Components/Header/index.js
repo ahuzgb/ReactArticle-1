@@ -1,12 +1,13 @@
 import React from "react";
+import "./header.css";
 
 export default function Header() {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg bg-light">
+      <nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Navbar
+            Backend
           </a>
           <button
             className="navbar-toggler"

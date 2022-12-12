@@ -1,0 +1,7 @@
+header .nav-link,
+header .navbar-brand {
+  color: inherit;
+}
+header .navbar-nav .nav-link.active {
+  color: var(--color-primary);
+}
