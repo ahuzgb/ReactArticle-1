@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.css";
+import { NavLink, Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -16,7 +17,8 @@ export default function Header() {
             data-bs-target="#navbarNav"
             aria-controls="navbarNav"
             aria-expanded="false"
-            aria-label="Toggle navigation">
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
