@@ -1,9 +1,11 @@
 import React, { useEffect, useState,useRef } from "react";
+import "./json.css" 
 
 export default function JSONart() {
 
 return(
     <>
+    <div className="background">
 <p>JSON, or JavaScript Object Notation, is a format used to represent data.
 It was introduced in the early 2000s as part of JavaScript and gradually expanded to become the most common medium for describing and exchanging text-based data.
 Today, JSON is the universal standard of data exchange. It is found in every area of programming, including front-end and server-side development, systems, middleware, and databases.
@@ -15,6 +17,8 @@ JSON was initially developed as a format for communicating between JavaScript cl
 It quickly gained popularity as a human-readable format that front-end programmers could use to communicate with the back end using a terse, standardized format.
 Developers also discovered that JSON was very flexible: you could add, remove, and update fields ad hoc.(That flexibility came at the cost of safety, which was later addressed with the JSON schema.)</p>
 
+
+<p>
 In a curious turn, JSON was popularized by the AJAX revolution.Strange, given the emphasis on XML, but it was JSON that made AJAX really shine.
 Using REST as the convention for APIs and JSON as the medium for exchange proved a potent combination for balancing simplicity, flexibility, and consistency.
 
@@ -26,18 +30,19 @@ In an interview in early 2022, MongoDB CTO Mark Porter noted that, from his pers
 
 No matter what type of program or use case they're working on, software developers need a way to describe and exchange data. This need is found in databases, business logic, user interfaces, and in all systems communication.
 There are many approaches to structuring data for exchange.The two broad camps are binary and text-based data.JSON is a text-based format, so it is readable by both people and machines.
+</p>
 
+<p>
 JSON is a wildly successful way of formatting data for several reasons.First, it's native to JavaScript, and it's used inside of JavaScript programs as JSON literals. 
 You can also use JSON with other programming languages, so it's useful for data exchange between heterogeneous systems.Finally, it is human readable. 
 For a language data structure, JSON is an incredibly versatile tool. It is also fairly painless to use, especially when compared to other formats. 
- {  { 
-username: "Sylvester Stallone",
-password: zrtjef6934k}
- }
+ 
 
-Everything inside of the braces or squiggly brackets  {`({...})`}  belongs to the same object.An object, in this case, refers in the most general sense to a “single thing." Inside the braces are the properties that belong to the thing.
+Everything inside of the braces or squiggly brackets    belongs to the same object.An object, in this case, refers in the most general sense to a “single thing." Inside the braces are the properties that belong to the thing.
 Each property has two parts: a name and a value, separated by a colon.These are known as the keys and values.In Listing 1, "username" is a key and "Silvester Stallone" is a value.
+</p>
 
+<p>
 The key takeaway here is that JSON does everything necessary to handle the need—in this case, holding the information in the form—without a lot of extra information. You can glance at this JSON file and understand it. 
 That is why we say that JSON is concise. Conciseness also makes JSON an excellent format for sending over the wire.
 
@@ -46,41 +51,21 @@ XML is hard to read and leaves much to be desired in terms of coding agility. JS
 
 Two data formats sometimes compared to JSON are YAML and CSV.The two formats are on opposite ends of the temporal spectrum.
 CSV is an ancient, pre-digital format that eventually found its way to being used in computers.YAML was inspired by JSON and is something of its conceptual descendant.
+</p>
 
+<p>
 CSV is a simple list of values, with each entry denoted by a comma or other separator character, with an optional first row of header fields.It is rather limited as a medium of exchange and programming structure, but it is still useful for outputting large amounts of data to disk. And, of course, CSV's organization of tabular data is perfect for things like spreadsheets.
-
+</p>
+<p>
 YAML is actually a superset of JSON, meaning it will support anything JSON supports.But YAML also supports a more stripped-down syntax, intended to be even more concise than JSON. 
 For example, YAML uses indentation for hierarchy, forgoing the braces.Although YML is sometimes used as a data exchange format, its biggest use case is in configuration files.
 
-So far, you've only seen examples of JSON used with shallow (or simple) objects.
-That just means every field on the object holds the value of a primitive.
 JSON is also capable of modeling arbitrary complex data structures such as object graphs and cyclic graphs—that is, structures with circular references. 
 
-JSON with nested objects
-
-{`
-let merry = { name: "Merry",
-  bestfriend: {
-    name: "Pippin"
-  }
-}`}
 
 The bestfriend property in  to another object, which is defined inline as a JSON literal.
 
-JSON with object references
 
-{`
-let merry = { race: "hobbit", name: “Merry Brandybuck” }
-let pippin = {race: "hobbit", name: “Pippin Took”, bestfriend: merry }
-console.log(JSON.stringify(pippin.bestfriend.name));`} // outputs “Merry Brandybuck”
-
-
-JSON with arrays
-
-{`
-{
-  towns: [ “The Shire”, “Rivendale”, “Gondor” ]
-}`}
 
 Of course, arrays may hold references to other objects, as well.With these two structures, JSON can model any range of complex object relations.
 Summary of JSON value types
@@ -96,13 +81,9 @@ In most other languages, it’s necessary to use a third-party library for parsi
 These libraries are more complex than stringify and parse in JavaScript, but they also offer advanced capabilities such as mapping to and from custom types and dealing with other data formats.
 
 In JavaScript, it is common to send and receive JSON to servers.For example with the built in fetch() API.
-  
+</p>
 
-{`
-fetch('https://the-one-api.dev/v2/character')
-  .then((response) => response.json())
-  .then((data) => console.log(data));
-`}
+<p>
 Once you turn JSON into an in-memory data structure, be it JavaScript or another language, you can employ the APIs for manipulating the structure. For example, in JavaScript, the JSON parsed in Listing 7 would be accessed like any other JavaScript object—perhaps by looping through data.keys or accessing known properties on the data object.
 JWTs
 
@@ -118,13 +99,8 @@ TypeScript allows for defining types and interfaces, so there are times when usi
 Conclusion
 
 JSON is one of the most essential technologies used in the modern software landscape. It is crucial to JavaScript but also used as a common mode of interaction between a wide range of technologies. Fortunately, the very thing that makes JSON so useful makes it relatively easy to understand. It is a concise and readable format for representing textual data.
-
-
-
-
-
-
-
+</p>
+</div>
 </>
     )
 
