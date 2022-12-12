@@ -5,12 +5,7 @@ import Node from "./Components/Articles/Node";
 function App() {
   return (
     <div className="App">
-      <Header />
-      <h1>Backend</h1>
-      <button type="button" className="btn btn-primary">
-        Send
-      </button>
-      <Node />
+      <h1>Backend Articles</h1>
     </div>
   );
 }
