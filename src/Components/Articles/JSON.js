@@ -6,7 +6,10 @@ export default function JSONart() {
 return(
     <>
     <div className="background">
-<p>JSON, or JavaScript Object Notation, is a format used to represent data.
+<h1>JSON: The tool for nearly flawless Internet communication.</h1>
+
+
+<p>JSON, or JavaScript Object Notation, is a format used to represent data.<br/>
 It was introduced in the early 2000s as part of JavaScript and gradually expanded to become the most common medium for describing and exchanging text-based data.
 Today, JSON is the universal standard of data exchange. It is found in every area of programming, including front-end and server-side development, systems, middleware, and databases.
 </p>
@@ -64,9 +67,8 @@ JSON is also capable of modeling arbitrary complex data structures such as objec
 
 
 The bestfriend property in  to another object, which is defined inline as a JSON literal.
-
-
-
+</p>
+<p>
 Of course, arrays may hold references to other objects, as well.With these two structures, JSON can model any range of complex object relations.
 Summary of JSON value types
 
@@ -75,11 +77,13 @@ So far you've seen strings, objects, and arrays as value types.Additional value 
 Parsing and generating JSON means reading it and creating it, respectively.You’ve seen JSON.stringify() in action already.
 That is the built-in mechanism for JavaScript programs to take an in-memory object representation and turn it into a JSON string.
 To go in the other direction—that is, take a JSON string and turn it into an in-memory object—you use JSON.parse().
-
+</p>
+<p>
 In most other languages, it’s necessary to use a third-party library for parsing and generating.
  For example, in Java there are numerous libraries, but the most popular are Jackson and GSON.
 These libraries are more complex than stringify and parse in JavaScript, but they also offer advanced capabilities such as mapping to and from custom types and dealing with other data formats.
-
+</p>
+<p>
 In JavaScript, it is common to send and receive JSON to servers.For example with the built in fetch() API.
 </p>
 
@@ -91,7 +95,8 @@ Authentication is another area where JSON is used. Developers and others use JSO
 JSON schema and JSON formatter
 
 JavaScript and JSON are incredibly flexible, but sometimes you need more structure than they provide. In a language like Java, strong typing and abstract types (like interfaces) help structure large-scale programs. In SQL stores, a schema provides a similar structure. If you need more structure in your JSON documents, you can use JSON schema to explicitly define the characteristics of your JSON objects. Once defined, you can use the schema to validate object instances and ensure that they conform to the schema.
-
+</p>
+<p>
 Another issue is dealing with machine-processed JSON that is minified and illegible. Fortunately, this problem is easy to solve. Just jump over to the JSON Formatter & Validator (I like this tool but there are others), paste in your JSON, and hit the Process button. You'll see a human-readable version that you can use. Most IDEs also have a built-in JavaScript formatter to format your JSON.
 Using JSON with TypeScript
 
